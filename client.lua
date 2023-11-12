@@ -1,5 +1,5 @@
 RegisterCommand('atts', function()
-    local playerPed = GetPlayerPed(-1)
+    local playerPed = PlayerPedId()
 
     for _, weaponName in pairs(Config.weaponNames) do
         local weaponHash = GetHashKey(weaponName)
